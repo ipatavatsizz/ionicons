@@ -1,6 +1,8 @@
 # Ionicons Compose Integration
 
-This project is an unofficial integration of [Ionicons](https://ionic.io/ionicons) into Jetpack
+
+> [!CAUTION]
+> This project is an unofficial integration of [Ionicons](https://ionic.io/ionicons) into Jetpack
 Compose, developed to suit personal requirements. While I strive to keep it updated, users are
 encouraged to fork and adapt it as needed.
 
