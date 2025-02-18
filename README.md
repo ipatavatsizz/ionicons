@@ -1,10 +1,9 @@
-# Ionicons Compose Integration
-
-
 > [!CAUTION]
 > This project is an unofficial integration of [Ionicons](https://ionic.io/ionicons) into Jetpack
 Compose, developed to suit personal requirements. While I strive to keep it updated, users are
 encouraged to fork and adapt it as needed.
+
+# Ionicons Compose Integration
 
 [Ionicons](https://ionic.io/ionicons) is an open-source icon set featuring over 1,300 handcrafted
 icons designed for web, iOS, Android, and desktop applications. This repository offers a Jetpack
@@ -26,54 +25,25 @@ To incorporate the Ionicons Compose library into your Android project, follow th
    include(":ionicons")
    ```
 
-   *Note: Replace `'1.5.15'` with the latest stable version of the Kotlin compiler extension.*
-
-2. **Add Dependencies**: Include the Ionicons Compose library and necessary Compose dependencies in
-   your module-level `build.gradle` file:
-
-   ```groovy
-   dependencies {
-       implementation 'com.example:ionicons-compose:1.0.0'
-       implementation 'androidx.compose.ui:ui:1.7.8'
-       implementation 'androidx.compose.material:material:1.7.8'
-       implementation 'androidx.compose.ui:ui-tooling-preview:1.7.8'
-       implementation 'androidx.activity:activity-compose:1.4.0'
-   }
-   ```
-
-   *Note: Replace `'com.example:ionicons-compose:1.0.0'` with the actual group ID and version of the
-   Ionicons Compose library. Ensure that the Compose library versions match the Kotlin compiler
-   extension version.*
-
-By completing these steps, the Ionicons Compose library will be integrated into your project,
-allowing you to utilize Ionicons in your Jetpack Compose UI components.
-
 ## Usage
 
 After adding the dependency, you can use Ionicons in your Compose UI as shown below:
 
 ```kotlin
 import androidx.compose.material.Icon
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import com.example.ionicons.compose.Ionicons
 import com.example.ionicons.compose.icons.Outline
 
-@Composable
-fun SampleIcon() {
-  Icon(
-    imageVector = Ionicons.Outline.Hammer,
-    contentDescription = "Hammer Icon",
-    tint = Color.Black,
-    modifier = Modifier.size(32.dp)
-  )
-}
+Icon(
+   imageVector = Ionicons.Outline.Hammer, 
+   contentDescription = "Hammer Icon", 
+   modifier = Modifier.size(32.dp)
+)
 ```
 
-In this example, the `Hammer` icon from the `Outline` set is displayed with a size of 32.dp and a
-black tint.
+In this example, the `Hammer` icon from the `Outline` set is displayed with a size of 32.dp (default 512.dp).
 
 ## Icon Sets
 
@@ -93,7 +63,7 @@ Ionicons.Sharp.Hammer
 
 ## Contributing
 
-Contributions are welcome! If you'd like to add new icons, report issues, or suggest enhancements,
+Contributions are welcome! I would like to stick to the original repository. If you'd like to report issues, or suggest enhancements,
 please open an issue or submit a pull request.
 
 ## License
