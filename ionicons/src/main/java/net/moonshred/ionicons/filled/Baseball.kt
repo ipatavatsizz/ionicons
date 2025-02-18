@@ -6,6 +6,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import net.moonshred.ionicons.Ionicons
+import net.moonshred.ionicons.IoniconsIconDimension
 
 val Ionicons.Filled.Baseball: ImageVector
   get() {
@@ -14,8 +15,8 @@ val Ionicons.Filled.Baseball: ImageVector
     }
     _Baseball = ImageVector.Builder(
       name = "Filled.Baseball",
-      defaultWidth = 512.dp,
-      defaultHeight = 512.dp,
+      defaultWidth = IoniconsIconDimension.dp,
+      defaultHeight = IoniconsIconDimension.dp,
       viewportWidth = 512f,
       viewportHeight = 512f
     ).apply {

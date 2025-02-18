@@ -8,6 +8,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import net.moonshred.ionicons.Ionicons
+import net.moonshred.ionicons.IoniconsIconDimension
 
 val Ionicons.Outline.Speedometer: ImageVector
   get() {
@@ -16,8 +17,8 @@ val Ionicons.Outline.Speedometer: ImageVector
     }
     _SpeedometerOutline = ImageVector.Builder(
       name = "Outline.SpeedometerOutline",
-      defaultWidth = 512.dp,
-      defaultHeight = 512.dp,
+      defaultWidth = IoniconsIconDimension.dp,
+      defaultHeight = IoniconsIconDimension.dp,
       viewportWidth = 512f,
       viewportHeight = 512f
     ).apply {

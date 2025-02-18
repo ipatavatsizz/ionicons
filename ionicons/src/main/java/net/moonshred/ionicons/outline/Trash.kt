@@ -8,6 +8,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import net.moonshred.ionicons.Ionicons
+import net.moonshred.ionicons.IoniconsIconDimension
 
 val Ionicons.Outline.Trash: ImageVector
   get() {
@@ -16,8 +17,8 @@ val Ionicons.Outline.Trash: ImageVector
     }
     _TrashOutline = ImageVector.Builder(
       name = "Outline.TrashOutline",
-      defaultWidth = 512.dp,
-      defaultHeight = 512.dp,
+      defaultWidth = IoniconsIconDimension.dp,
+      defaultHeight = IoniconsIconDimension.dp,
       viewportWidth = 512f,
       viewportHeight = 512f
     ).apply {

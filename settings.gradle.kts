@@ -20,3 +20,4 @@ dependencyResolutionManagement {
 }
 
 include(":ionicons")
+include(":app")

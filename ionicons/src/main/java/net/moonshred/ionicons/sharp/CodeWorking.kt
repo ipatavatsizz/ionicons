@@ -7,6 +7,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import net.moonshred.ionicons.Ionicons
+import net.moonshred.ionicons.IoniconsIconDimension
 
 val Ionicons.Sharp.CodeWorking: ImageVector
   get() {
@@ -15,8 +16,8 @@ val Ionicons.Sharp.CodeWorking: ImageVector
     }
     _CodeWorkingSharp = ImageVector.Builder(
       name = "Sharp.CodeWorkingSharp",
-      defaultWidth = 512.dp,
-      defaultHeight = 512.dp,
+      defaultWidth = IoniconsIconDimension.dp,
+      defaultHeight = IoniconsIconDimension.dp,
       viewportWidth = 512f,
       viewportHeight = 512f
     ).apply {

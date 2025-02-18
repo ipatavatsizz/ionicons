@@ -7,6 +7,7 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import net.moonshred.ionicons.Ionicons
+import net.moonshred.ionicons.IoniconsIconDimension
 
 val Ionicons.Outline.MicOff: ImageVector
   get() {
@@ -15,8 +16,8 @@ val Ionicons.Outline.MicOff: ImageVector
     }
     _MicOffOutline = ImageVector.Builder(
       name = "Outline.MicOffOutline",
-      defaultWidth = 512.dp,
-      defaultHeight = 512.dp,
+      defaultWidth = IoniconsIconDimension.dp,
+      defaultHeight = IoniconsIconDimension.dp,
       viewportWidth = 512f,
       viewportHeight = 512f
     ).apply {
