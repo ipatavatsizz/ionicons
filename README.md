@@ -41,7 +41,7 @@ dependencies {
 }
 ```
 
-**Important:** Replace `<latest_version_tag>` with the actual version you want to use. You can find the available version tags on the [Releases page](/tags) of the repository (e.g., `v1.0.0`, `v1.0.1`).
+**Important:** Replace `<latest_version_tag>` with the actual version you want to use. You can find the available version tags on the [Tags page](https://github.com/ipatavatsizz/ionicons/tags) of the repository (e.g., `v1.0.0`, `v1.0.1`).
 
 ## Usage
 
