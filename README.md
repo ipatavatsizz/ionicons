@@ -1,6 +1,6 @@
 > [!CAUTION]
 > This project is an unofficial integration of [Ionicons](https://ionic.io/ionicons) into Jetpack
-Compose, developed to suit personal requirements. Right now, due to my focus is on another project, limiting the time I can dedicate to this one.
+> Compose, developed to suit personal requirements. Right now, due to my focus is on another project, limiting the time I can dedicate to this one.
 > However, once my current work is complete, I plan to allocate more time to this project and ensure it remains consistently updated.
 
 # Ionicons Compose Integration
@@ -17,59 +17,31 @@ Compose library to seamlessly incorporate Ionicons into your Android Compose pro
 
 ## Installation
 
-To incorporate the Ionicons Compose library into your Android project, you have two options:
+The Ionicons Compose library is available via JitPack. To add it to your project:
 
-**1. Adding as a Git Submodule**
+**Step 1: Add JitPack Repository (settings.gradle.kts)**
 
-- **Add the Submodule**: Open your terminal, navigate to your project's root directory, and execute the following command:
+```kotlin
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://jitpack.io") } // Add JitPack repository
+    }
+}
+```
 
-  ```bash
-  git submodule add https://github.com/ipatavatsizz/ionicons.git
-  ```
+**Step 2: Add the Dependency (app/build.gradle.kts)**
 
-- **Project Configuration**: In your project's `settings.gradle.kts` file, include the following line:
+```kotlin
+dependencies {
+    // ... other dependencies
+    implementation("com.github.ipatavatsizz:ionicons:<latest_version_tag>")
+}
+```
 
-  ```groovy
-  include(":ionicons")
-  ```
-
-  This includes the `ionicons` module in your project.
-
-- **Add Dependency**: In your application's `build.gradle.kts` file, add the following dependency:
-
-  ```groovy
-  dependencies {
-      implementation(project(":ionicons"))
-  }
-  ```
-
-**2. Cloning the Repository Directly**
-
-- **Clone the Repository**: Open your terminal, navigate to your project's root directory, and execute:
-
-  ```bash
-  git clone https://github.com/ipatavatsizz/ionicons.git
-  ```
-
-- **Project Configuration**: In your project's `settings.gradle.kts` file, include the following line:
-
-  ```groovy
-  include(":ionicons")
-  ```
-
-  This includes the `ionicons` module in your project.
-
-- **Add Dependency**: In your application's `build.gradle.kts` file, add the following dependency:
-
-  ```groovy
-  dependencies {
-      implementation(project(":ionicons"))
-  }
-  ```
-
-  This links the `ionicons` module to your application.
-
-By following either of these methods, you can integrate the Ionicons Compose library into your Android project.
+**Important:** Replace `<latest_version_tag>` with the actual version you want to use. You can find the available version tags on the [Releases page](/tags) of the repository (e.g., `v1.0.0`, `v1.0.1`).
 
 ## Usage
 
@@ -77,8 +49,6 @@ After adding the dependency, you can use Ionicons in your Compose UI as shown be
 
 ```kotlin
 import androidx.compose.material.Icon
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import net.moonshred.ionicons.Ionicons
 import net.moonshred.ionicons.Outline.Hammer
 
@@ -92,7 +62,7 @@ Icon(
 
 > [!NOTE]
 > You can browse icons at https://ionic.io/ionicons
-> 
+>
 > You can access cheatsheet at https://unpkg.com/ionicons/dist/cheatsheet.html
 
 Ionicons provides three distinct icon styles:
@@ -117,4 +87,4 @@ If you'd like to report issues, or suggest enhancements, please open an issue or
 ## License
 
 This project is licensed under the MIT License. See
-the [LICENSE](https://opensource.org/licenses/MIT) file for details. 
+the [LICENSE](https://opensource.org/licenses/MIT) file for details.
