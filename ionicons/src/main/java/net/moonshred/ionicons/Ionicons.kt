@@ -4,6 +4,7 @@ object Ionicons {
   object Outline
   object Sharp
   object Filled
+  object Logo
 
   val Default = Filled
 }
