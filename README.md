@@ -1,13 +1,6 @@
-> [!CAUTION]
-> This project is an unofficial integration of [Ionicons](https://ionic.io/ionicons) into Jetpack
-> Compose, developed to suit personal requirements. Right now, due to my focus is on another project, limiting the time I can dedicate to this one.
-> However, once my current work is complete, I plan to allocate more time to this project and ensure it remains consistently updated.
+# Ionicons Compose ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ipatavatsizz/ionicons) ![GitHub License](https://img.shields.io/github/license/ipatavatsizz/ionicons)
 
-# Ionicons Compose Integration
-
-[Ionicons](https://ionic.io/ionicons) is an open-source icon set featuring over 1,300 handcrafted
-icons designed for web, iOS, Android, and desktop applications. This repository offers a Jetpack
-Compose library to seamlessly incorporate Ionicons into your Android Compose projects.
+### [Ionicons](https://ionic.io/ionicons) is an open-source icon set featuring over 1,300 handcrafted icons designed for web, iOS, Android, and desktop applications. This repository offers a Jetpack Compose library to seamlessly incorporate Ionicons into your Android Compose projects.
 
 ## Features
 
@@ -37,11 +30,11 @@ dependencyResolutionManagement {
 ```kotlin
 dependencies {
     // ... other dependencies
-    implementation("com.github.ipatavatsizz:ionicons:<latest_version_tag>")
+    implementation("com.github.ipatavatsizz:ionicons:7.4.0")
 }
 ```
 
-**Important:** Replace `<latest_version_tag>` with the actual version you want to use. You can find the available version tags on the [Tags page](https://github.com/ipatavatsizz/ionicons/tags) of the repository (e.g., `v1.0.0`, `v1.0.1`).
+**Important:** Check the latest tag version on [Tags](https://github.com/ipatavatsizz/ionicons/tags).
 
 ## Usage
 
@@ -54,37 +47,29 @@ import net.moonshred.ionicons.Outline.Hammer
 
 Icon(
   Ionicons.Outline.Hammer,
-  contentDescription = "Hammer Icon"
+  contentDescription = "This is a Hammer!"
 )
 ```
 
 ## Icon Sets
 
-> [!NOTE]
-> You can browse icons at https://ionic.io/ionicons
->
-> You can access cheatsheet at https://unpkg.com/ionicons/dist/cheatsheet.html
+> You can browse icons(7.1.0) at https://ionic.io/ionicons
+
+> You can access latest cheatsheet at https://unpkg.com/ionicons/dist/cheatsheet.html
 
 Ionicons provides three distinct icon styles:
 
 - **Outline**: Icons with an outlined design.
 - **Filled**: Solid icons with filled shapes.
 - **Sharp**: Icons featuring sharp edges.
-
-Access these sets through the `Ionicons` object:
-
-```kotlin
-Ionicons.Outline.IconName
-Ionicons.Filled.IconName
-Ionicons.Sharp.IconName
-```
+- **Logo**: Icons with brand logos.
 
 ## Contributing
 
-Contributions are welcomed but I would like to stick to the original repository.
-If you'd like to report issues, or suggest enhancements, please open an issue or submit a pull request.
+Contributions are always welcomed but I would like to stick to the original repository.
+If you'd like to report issues, or suggest enhancements, please open an issue or submit a pull request I will consider.
 
 ## License
 
-This project is licensed under the MIT License. See
+This project is licensed under same as original authors/website, the MIT License. See
 the [LICENSE](https://opensource.org/licenses/MIT) file for details.
